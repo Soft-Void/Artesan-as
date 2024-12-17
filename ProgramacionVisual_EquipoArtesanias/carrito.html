@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoros Mexicanos - Carrito de Compras</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+
+    <script src="cart.js"></script>
+
+
+    <nav class="navigation">
+        <a href="index.html" class="main-title">
+            <h1>Tesoros Mexicanos</h1>
+        </a>
+        <div>
+            <a href="index.html" class="cta-button">Inicio</a>
+            <a href="productos.html" class="cta-button">Productos</a>
+            <a href="contacto.html" class="cta-button">Contacto</a>
+            <a href="carrito.html" class="cta-button">Carrito</a>
+
+        </div>
+    </nav>
+
+    <main class="cart-container">
+        <section class="cart-items">
+            <h2>Tu Carrito</h2>
+            
+            <div class="cart-item">
+                <img src="alebrije.webp" alt="Alebrije">
+                <div class="item-details">
+                    <h3>Alebrije Artesanal</h3>
+                    <p>$1,500 MXN</p>
+                </div>
+                <div class="item-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="number" value="1" min="1" style="width: 50px; text-align: center;">
+                    <button class="quantity-btn">+</button>
+                </div>
+                <p>$1,500 MXN</p>
+            </div>
+
+            <div class="cart-item">
+                <img src="huipilBordado.webp" alt="Huipil">
+                <div class="item-details">
+                    <h3>Huipil Bordado</h3>
+                    <p>$2,500 MXN</p>
+                </div>
+                <div class="item-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="number" value="1" min="1" style="width: 50px; text-align: center;">
+                    <button class="quantity-btn">+</button>
+                </div>
+                <p>$2,500 MXN</p>
+            </div>
+        </section>
+
+        <section class="cart-summary">
+            <h2>Resumen de Compra</h2>
+
+            <div class="shipping-calculator">
+                <h3>Calcular Envío</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Código Postal</label>
+                        <input type="text" placeholder="Ingresa tu código postal">
+                    </div>
+                    <div class="form-group">
+                        <label>Método de Envío</label>
+                        <select>
+                            <option>Estándar (5-7 días) - $150 MXN</option>
+                            <option>Express (2-3 días) - $300 MXN</option>
+                            <option>Urgente (1 día) - $500 MXN</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="payment-method">
+                <h3>Método de Pago</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Tipo de Tarjeta</label>
+                        <select>
+                            <option>Tarjeta de Crédito</option>
+                            <option>Tarjeta de Débito</option>
+                            <option>PayPal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Número de Tarjeta</label>
+                        <input type="text" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre en la Tarjeta</label>
+                        <input type="text" placeholder="Nombre completo">
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <p>Subtotal: $4,000 MXN</p>
+                <p>Envío: $150 MXN</p>
+                <p><strong>Total: $4,150 MXN</strong></p>
+            </div>
+
+            <button class="checkout-btn">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Tesoros Mexicanos</p>
+        <small>Proyecto de Programación Visual</small>
+    </footer>
+</body>
+</html>
